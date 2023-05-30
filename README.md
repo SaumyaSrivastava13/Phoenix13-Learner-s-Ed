@@ -67,7 +67,7 @@ Making learning more interactive and innovative by providing a clearer picture a
 
 ## Our Models
 
-![UML-Diagram](https://cdn.discordapp.com/attachments/1046493587916988417/1113139600605585558/Diagram.png)
+![UML-Diagram](https://cdn.discordapp.com/attachments/1046493587916988417/1113141041399332874/Diagram.png)
 
 // Discussing Models with Benchmarking
   
