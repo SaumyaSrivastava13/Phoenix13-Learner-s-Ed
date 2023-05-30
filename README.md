@@ -31,7 +31,7 @@ During Covid-19, when everything had shifted to online mode, students used to ge
 
 Making learning more interactive and innovative by providing a clearer picture along with some fun elements, here we list the features of our project bifurcated into three categories.
 
-**Category - 01   (Academic)**
+## Category - 01   (Academic)
 
 ![Banner-3](https://cdn.discordapp.com/attachments/1046493587916988417/1113105198349553746/3.png)
 
@@ -45,7 +45,7 @@ Making learning more interactive and innovative by providing a clearer picture a
 
 05.  A highlight section that would keep them connected to the world. Giving them a daily insight into what's happening around the globe, especially their areas of interest.
 
-**Category - 02  (Gamification)**
+## Category - 02  (Gamification)
 
 ![Banner-4](https://cdn.discordapp.com/attachments/1046493587916988417/1113105577070047252/4.png)
 
@@ -55,7 +55,7 @@ Making learning more interactive and innovative by providing a clearer picture a
 
 03. Adding some fun virtual elements, there will be a performance-wise token credit system in this Gamification Centre. Based on this credit, the students can unlock new features for their virtual pet. 
 
-**Category - 03  (Student Insights)**
+## Category - 03  (Student Insights)
 
 ![Banner-5](https://cdn.discordapp.com/attachments/1046493587916988417/1113105861733253210/5.png)
 
