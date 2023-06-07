@@ -303,7 +303,84 @@ Similarity Display: The code iterates over the similarities and prints the simil
 
 In summary, the code performs a plagiarism check by comparing a student's assignment with a set of reference assignments. It preprocesses the text, extracts the relevant information from DOCX files, calculates the similarity using TF-IDF vectors, and provides a similarity score for each reference assignment. This approach allows for the detection of potential plagiarism by analyzing the textual content of the assignments.
 
+# Students Insight Section
 
+![student](https://cdn.discordapp.com/attachments/1046493587916988417/1116047719711125644/Screenshot_2023-06-07_215959.png)
+
+This section is made for students to explore more out of their surrounding peoples and environment, this section is divided into 3 sections. This makes a healthy environment for them in the panel itself, making them feel connected which was a major hit at the time of covid.
+
+## Chatroom
+
+The first one is chatrooms, this chatrooms are available throughout the campus, further these can be sub divided into class-wise, section-wise as well, so that students can chat and get along their coomunity. This will help building a community mindset amongst them and never leave them alone in the lockdown period of covid, making them 
+mentally strong. 
+
+![im](https://cdn.discordapp.com/attachments/1046493587916988417/1116047719463657553/Screenshot_2023-06-07_220039.png)
+
+## Mental Health Chatbot
+
+The second section includes mental health chatbot which is a deep learning model trainged chatbot. This model helps the students to discuss their problems with them and give a stress release session with the chatbot. The chatbot gives a helping hand to the students if they face any such mental health issues.
+
+![men](https://cdn.discordapp.com/attachments/1046493587916988417/1116047719174254662/Screenshot_2023-06-07_220259.png)
+
+The provided code trains a chatbot model using a sequential neural network for intent recognition and response generation. Here is a technical write-up summarizing its functionality:
+
+Data Loading: The code reads a JSON file containing intents data and creates a pandas DataFrame to store the tag, patterns, and responses.
+
+Data Preprocessing: The patterns from the DataFrame are tokenized using the Keras Tokenizer, which converts the text into sequences of integers. The tokenizer is fitted on the patterns and converts them into sequences.
+
+Input and Output Encoding: The padded sequences of patterns (X) are created using the pad_sequences function from Keras, which ensures that all sequences have the same length. The tags (y) are encoded using the LabelEncoder from scikit-learn, which converts the categorical labels into numerical form.
+
+Model Architecture: The code defines a sequential neural network model using the Keras Sequential API. The model consists of an input layer, an embedding layer, multiple LSTM layers, layer normalization, dense layers, and dropout regularization. The final layer uses softmax activation for multi-class classification.
+
+Model Compilation: The model is compiled with the Adam optimizer and sparse categorical cross-entropy loss, which is suitable for multi-class classification problems. Accuracy is used as an additional metric.
+
+Model Training: The model is trained on the input data (X) and target labels (y) using the fit function. An early stopping callback is included to monitor the accuracy and stop training if it doesn't improve after a certain number of epochs.
+
+Model Response Generation: The code defines a function model_response that takes a user query and the trained model. The query is preprocessed, tokenized, and converted into a sequence. The sequence is padded, and the model predicts the most probable tag for the query. A random response is selected from the responses associated with the predicted tag.
+
+Model Testing: The model_response function is called with example queries to test the chatbot. The user query, model response, and random selected response are printed.
+
+In summary, the code trains a chatbot model for intent recognition and response generation using a sequential neural network architecture. It preprocesses the data, creates a model with LSTM layers, trains the model, and generates responses based on user queries. This approach allows the chatbot to understand user intents and provide appropriate responses.
+
+# Intel Optimization Applied
+
+Here I have used Intel oneDNN with OpenMP, scikit-learn extension, and Moding[ray] Pandas Library which leverages this models performance.
+
+Note: Every model is trained on Intel Python for more optimization.
+
+Here are OpenMP params
+
+inter: 2
+
+intra: 6
+
+KMP_BLOCKTIME: 1
+
+Test_Set: 20
+
+Benchmarking Rates
+
+Inference Time Rate: 2.3821281464139816
+
+Latency Rate: 0.41979269734308167
+
+Throughput Rate: 2.3821281464139816
+
+Training Time Rate: 0.7704980148747786
+
+![img]()
+
+## Explore Fields
+
+The last section inlcudes Explore Fields section which fetches the information from different sets of fields, and present them to the students with the help of popular newsletter API, these gathered pit of useful information makes the student more encouraged to read them, instead of searching and scraping them through the web.
+
+![Exp](https://cdn.discordapp.com/attachments/1046493587916988417/1116047718771597312/Screenshot_2023-06-07_220329.png)
+
+![exp](https://cdn.discordapp.com/attachments/1046493587916988417/1116047718243123240/Screenshot_2023-06-07_220346.png)
+
+Here is the whole process flow diagram for each model being used.
+
+# Process Flow Diagram
 
 ![Process](https://cdn.discordapp.com/attachments/1046493587916988417/1115980341925130251/Intel_oneAPI_Hackathon_PPT.png)
   
