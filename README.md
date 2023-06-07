@@ -252,7 +252,16 @@ Here is the benchmarks difference in normal cpu vs intel optimized cpu
 
 ![bgam](https://cdn.discordapp.com/attachments/1046493587916988417/1116017222951903284/FacePose.png)
 
-//
+## Virtual Pet
+
+Here comes the virtual pet section, the students have access to their very own virtual pet, they can select from two types and set their name. At initial the students have pet rank as last and level at 1. They need to increase their pet level faster inorder to be at the top of the rank list, and how to increase level?
+They need to feed their pet with the help of inbuilt food shop, where food can be purchased in exchange of Learners'Ed Coins, these coins can only be gained from answering the quiz questions correct, hence, letting the student to boost their decision making and knowledge, by being encouraged by this fun virtual pet competition.
+
+![vpet](https://cdn.discordapp.com/attachments/1046493587916988417/1116036254757310534/Screenshot_2023-06-07_213827.png)
+
+![vpet](https://cdn.discordapp.com/attachments/1046493587916988417/1116036254371426355/Screenshot_2023-06-07_213909.png)
+
+
 
 ![Process](https://cdn.discordapp.com/attachments/1046493587916988417/1115980341925130251/Intel_oneAPI_Hackathon_PPT.png)
   
