@@ -45,7 +45,7 @@ Making learning more interactive and innovative by providing a clearer picture a
 
 05.  A highlight section that would keep them connected to the world. Giving them a daily insight into what's happening around the globe, especially their areas of interest.
 
-## Category - 02  (Gamification)
+## Category - 02  (Gamification)He is not.
 
 ![Banner-4](https://cdn.discordapp.com/attachments/1046493587916988417/1113105577070047252/4.png)
 
@@ -69,7 +69,49 @@ Making learning more interactive and innovative by providing a clearer picture a
 
 ![UML-Diagram](https://cdn.discordapp.com/attachments/1046493587916988417/1113141041399332874/Diagram.png)
 
-// Discussing Models with Benchmarking
+# Student Login/Register
+
+Here we have the student login and registration page. Here, the newcomer student need to register themselves and enjoy the benefits of the dashboard. The new registration student needs to give the favorite categories, which will be used later on by our recommendation system to fetch the recommended videos for them.
+Also, here is the login page for the student who are already registered. They need to fill their email and password, and then enjoy the benefits of the portal services.
+
+#### Registration Page
+
+![Register](https://cdn.discordapp.com/attachments/1046493587916988417/1115982762248261672/Screenshot_2023-06-07_180649.png)
+
+#### Login Page
+![Login](https://cdn.discordapp.com/attachments/1046493587916988417/1115982762701226004/Screenshot_2023-06-07_180632.png)
+
+# Dashboard
+
+Now the new student is welcomed with the dashboard welcome message. Here we have the weather API that would Fetch the weather and keep the dashboard more updated with the outside world, so that student feel interacted with the world as well. Now, along with this, there is the rank of the student and also three graphs of the ranks amongst class wise, section wise and school wise. So that students can always keep track of where they stand out in the competing environment.
+Now there will be a alert or notification section as well, where the alerts from the admins will be presented. The next section includes the attendance for all the subjects here the average attendance is also mentioned. Now going to the next section, here is the Assignment Updation Center, where the student will get to know how many assignments are still left to do. After that, we have the LearnersEd Coin Bank, which tells us how many coins are left with the user And on the right side we have our virtual pet information, such as pet name, level and rank amongst these students and also a graph which gives the estimation of rank amongst others.
+At last, we have the recommendation section where the category selected would determine which type of videos will be fetched for the student and be presented in the recommendation section. 
+
+![Dash-1](https://cdn.discordapp.com/attachments/1046493587916988417/1115985017231917157/Screenshot_2023-06-07_181401.png)
+
+![Dash-2](https://cdn.discordapp.com/attachments/1046493587916988417/1115985016892170423/Screenshot_2023-06-07_181456.png)
+
+![Dash-3](https://cdn.discordapp.com/attachments/1046493587916988417/1115985016548245504/Screenshot_2023-06-07_181545.png)
+
+# Lecture Section
+
+Now we have the lecture section where all of the lectures recommended for the students are listed here. The student can watch that lecture by clicking on the watch button after going into the lecture section. Our drowsiness detection system would automatically work and will detect if the student is drowsy or awake. If the student is drowsy, then it would recommend some random sitting exercises from the database. The attendance will not be granted if the students is continuously being predicted drowsy. This makes the job of teachers more easier, as the students by themselves will be provoked to be aware of the lectures.
+
+#### Lecture List
+
+![Lect](https://cdn.discordapp.com/attachments/1046493587916988417/1115989285913493525/Screenshot_2023-06-07_183042.png)
+
+#### Not Drowsy
+
+![lec-1](https://cdn.discordapp.com/attachments/1046493587916988417/1115989285108187167/Screenshot_2023-06-07_183229.png)
+
+#### Drowsy
+
+![lec-2](https://cdn.discordapp.com/attachments/1046493587916988417/1115989285443735703/Screenshot_2023-06-07_183128.png)
+
+//
+
+![Process](https://cdn.discordapp.com/attachments/1046493587916988417/1115980341925130251/Intel_oneAPI_Hackathon_PPT.png)
   
 ## Tech Stack: 
 
