@@ -10,9 +10,9 @@ import re
 import ast
 import random
 
-model = tf.keras.models.load_model(r'D:\Project\Chatbot-Django\chatbot_interface\chatbot\model\chatbot_model.h5')
+model = tf.keras.models.load_model(r'D:\Project\Website-Phoenix13\LearnersEd\chatbot\model\chatbot_model.h5')
 
-df = pd.read_csv('D:\Project\Chatbot-Django\chatbot_interface\chatbot\model\dataset\dataframe_chatbot.csv')
+df = pd.read_csv(r'D:\Project\Website-Phoenix13\LearnersEd\chatbot\model\dataset\dataframe_chatbot.csv')
 df['patterns'] = df['patterns'].astype(str)
 
 tokenizer = Tokenizer(lower=True, split=' ')
