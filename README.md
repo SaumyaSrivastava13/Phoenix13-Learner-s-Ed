@@ -422,12 +422,258 @@ If you need to use a particular module lets say AIML Module or Web Module. If it
 
 Note: Some django modules have path assigned according to system directories, so you need to reassign the paths to all the models and dataset by searching through the `views.py` file present in each app or web module. If the `models.py` file contains data, you need to run the following commands before running server. The dataset `samples.pkl` used in Gamify-Quiz needs to be downloaded separately as the file size exceeds the github limit. We have provided the link for the `samples.pkl` dataset download in  `AIML Models> Gamification > readme.md`.
 
-``python manage.py makemigrations
-python manage.py migrate``
+```python manage.py makemigrations```
+```python manage.py migrate```
 
 #### Now lets discuss the step by step process for cloning the entire application in your environment!
 
+These are the requirements needed to run the project, This also conatins Intel Optimization Tools as well.
+```
+absl-py==1.4.0
+aiohttp==3.8.4
+aiohttp-cors==0.7.0
+aiosignal==1.3.1
+ansicon==1.89.0
+anyio==3.6.2
+appdirs==1.4.4
+argon2-cffi==21.3.0
+argon2-cffi-bindings==21.2.0
+arrow==1.2.3
+asgiref==3.7.2
+asttokens==2.2.1
+astunparse==1.6.3
+async-timeout==4.0.2
+attrs==23.1.0
+backcall==0.2.0
+beautifulsoup4==4.12.2
+bleach==6.0.0
+blessed==1.20.0
+boto3==1.26.139
+botocore==1.29.139
+cachetools==5.3.0
+certifi==2023.5.7
+cffi==1.15.1
+charset-normalizer==3.1.0
+click==8.1.3
+cloudpickle==2.2.1
+cmake==3.26.3
+colorama==0.4.6
+colorful==0.5.5
+comm==0.1.3
+contourpy==1.0.7
+cycler==0.11.0
+daal==2023.1.1
+daal4py==2023.1.1
+dask==2023.5.0
+debugpy==1.6.7
+decorator==5.1.1
+defusedxml==0.7.1
+distlib==0.3.6
+distributed==2023.5.0
+Django==4.1.9
+django-mongodb-engine==0.6.0
+djangotoolbox==1.8.0
+djongo==1.3.6
+dlib==19.24.1
+dnspython==2.3.0
+docker-pycreds==0.4.0
+docx==0.2.4
+executing==1.2.0
+face-recognition==1.3.0
+face-recognition-models==0.3.0
+fastjsonschema==2.17.1
+filelock==3.12.0
+flatbuffers==23.5.9
+fonttools==4.39.4
+fqdn==1.5.1
+frozenlist==1.3.3
+fsspec==2023.5.0
+gast==0.4.0
+gitdb==4.0.10
+GitPython==3.1.31
+google-api-core==2.11.0
+google-auth==2.18.1
+google-auth-oauthlib==1.0.0
+google-pasta==0.2.0
+googleapis-common-protos==1.59.0
+gpustat==1.1
+grpcio==1.51.3
+h5py==3.8.0
+idna==3.4
+importlib-metadata==6.6.0
+importlib-resources==5.12.0
+ipykernel==6.23.1
+ipython==8.13.2
+ipython-genutils==0.2.0
+ipywidgets==8.0.6
+isoduration==20.11.0
+jax==0.4.10
+jedi==0.18.2
+Jinja2==3.1.2
+jinxed==1.2.0
+jmespath==1.0.1
+joblib==1.2.0
+jsonpointer==2.3
+jsonschema==4.17.3
+jupyter==1.0.0
+jupyter-console==6.6.3
+jupyter-events==0.6.3
+jupyter_client==8.2.0
+jupyter_core==5.3.0
+jupyter_server==2.5.0
+jupyter_server_terminals==0.4.4
+jupyterlab-pygments==0.2.2
+jupyterlab-widgets==3.0.7
+keras==2.12.0
+kiwisolver==1.4.4
+libclang==16.0.0
+locket==1.0.0
+lxml==4.9.2
+Markdown==3.4.3
+MarkupSafe==2.1.2
+matplotlib==3.7.1
+matplotlib-inline==0.1.6
+mistune==2.0.5
+ml-dtypes==0.1.0
+modin==0.20.1
+modin-spreadsheet==0.1.2
+mpi4py-mpich==3.1.2
+msgpack==1.0.5
+multidict==6.0.4
+nbclassic==1.0.0
+nbclient==0.8.0
+nbconvert==7.4.0
+nbformat==5.8.0
+nest-asyncio==1.5.6
+nltk==3.8.1
+notebook==6.5.4
+notebook_shim==0.2.3
+numpy==1.23.5
+nvidia-ml-py==11.525.112
+oauthlib==3.2.2
+opencensus==0.11.2
+opencensus-context==0.1.3
+opencv-python==4.7.0.72
+opt-einsum==3.3.0
+packaging==23.1
+pandas==1.5.3
+pandocfilters==1.5.0
+parso==0.8.3
+partd==1.4.0
+pathtools==0.1.2
+pickleshare==0.7.5
+Pillow==9.5.0
+platformdirs==3.5.1
+plumbum==1.8.1
+prometheus-client==0.16.0
+prompt-toolkit==3.0.38
+protobuf==4.23.1
+psutil==5.9.5
+pure-eval==0.2.2
+py-spy==0.3.14
+pyarrow==12.0.0
+pyasn1==0.5.0
+pyasn1-modules==0.3.0
+pycparser==2.21
+pydantic==1.10.8
+Pygments==2.15.1
+pymongo==3.12.3
+pyparsing==3.0.9
+pyrsistent==0.19.3
+python-dateutil==2.8.2
+python-docx==0.8.11
+python-json-logger==2.0.7
+pytz==2023.3
+pywin32==306
+pywinpty==2.0.10
+PyYAML==6.0
+pyzmq==25.0.2
+qtconsole==5.4.3
+QtPy==2.3.1
+ray==2.4.0
+regex==2023.5.5
+requests==2.31.0
+requests-oauthlib==1.3.1
+rfc3339-validator==0.1.4
+rfc3986-validator==0.1.1
+rpyc==4.1.5
+rsa==4.9
+s3transfer==0.6.1
+scikit-learn==1.2.2
+scikit-learn-intelex==2023.1.1
+scipy==1.10.1
+seaborn==0.12.2
+Send2Trash==1.8.2
+sentry-sdk==1.24.0
+setproctitle==1.3.2
+six==1.16.0
+smart-open==6.3.0
+smmap==5.0.0
+sniffio==1.3.0
+sortedcontainers==2.4.0
+soupsieve==2.4.1
+sqlparse==0.2.4
+stack-data==0.6.2
+tbb==2021.9.0
+tblib==1.7.0
+tensorboard==2.12.3
+tensorboard-data-server==0.7.0
+tensorflow==2.12.0
+tensorflow-estimator==2.12.0
+tensorflow-intel==2.12.0
+tensorflow-io-gcs-filesystem==0.31.0
+termcolor==2.3.0
+terminado==0.17.1
+threadpoolctl==3.1.0
+tinycss2==1.2.1
+toolz==0.12.0
+tornado==6.3.2
+tqdm==4.65.0
+traitlets==5.9.0
+typing_extensions==4.6.1
+tzdata==2023.3
+unidist==0.3.0
+uri-template==1.2.0
+urllib3==1.26.16
+virtualenv==20.21.0
+wandb==0.15.3
+wcwidth==0.2.6
+webcolors==1.13
+webencodings==0.5.1
+websocket-client==1.5.2
+Werkzeug==2.3.4
+widgetsnbextension==4.0.7
+wrapt==1.14.1
+yarl==1.9.2
+zict==3.0.0
+zipp==3.15.0
+```
 
+you can install them using `pip install <library-here>` command or
+
+you can use the `requirements.txt` file to install all dependencies at once by
+
+`pip install -r requirements.txt`
+
+After this download and put the `LearnersEd` folder in the desired location.
+
+Note: You may need to change path according to system directory in views of some apps, make sure to check all the `views.py` files in each app and update them accordingly. You also need to download `samples.pkl` from this link:
+
+Use this link to download `samples.pkl` file and move this file to `data` folder:
+https://drive.google.com/file/d/1VipXnjP0UZC2CIHDaeMa6MHevPxQtUdf/view?usp=sharing
+
+after this step, you need to open terminal in the `LearnersEd` folder and type
+
+```python manage.py makemigrations```
+```python manage.py migrate```
+
+after this you are ready to launch your server
+
+```python manage.py runserver```
+
+This will generate a localhost port address, click on it along with pressing <kbd>Ctrl</kbd> button and this will redirect you to register/login page.
+
+You can now explore the LearnersEd Application in your localhost system !
   
 ## What I Learned:
 This advanced learning platform has motivated us to excel in every aspect of this project and upskill our knowledge parameters in various areas. Some of them are:-
