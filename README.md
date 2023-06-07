@@ -188,6 +188,8 @@ Here the students are presented with a quiz, but the twist is the answers are no
 
 This module is supported by Face Pose detection model developed by us.
 
+# Face Pose Detection System
+
 The provided code performs head pose estimation using a machine learning model. Here is a technical write-up summarizing its functionality:
 
 Data Loading: The code loads the input data from a pickle file. It consists of images as input samples (x) and corresponding head pose angles (y).
