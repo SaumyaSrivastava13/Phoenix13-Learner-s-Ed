@@ -314,7 +314,7 @@ This section is made for students to explore more out of their surrounding peopl
 The first one is chatrooms, this chatrooms are available throughout the campus, further these can be sub divided into class-wise, section-wise as well, so that students can chat and get along their coomunity. This will help building a community mindset amongst them and never leave them alone in the lockdown period of covid, making them 
 mentally strong. 
 
-![issm](https://cdn.discordapp.com/attachments/1046493587916988417/1116047719174254662/Screenshot_2023-06-07_220259.png)
+![issm](https://cdn.discordapp.com/attachments/1046493587916988417/1116047719463657553/Screenshot_2023-06-07_220039.png)
 
 ## Mental Health Chatbot
 
@@ -368,7 +368,7 @@ Throughput Rate: 2.3821281464139816
 
 Training Time Rate: 0.7704980148747786
 
-![img]()
+![img](https://cdn.discordapp.com/attachments/1046493587916988417/1116049227915730974/Mental_Health_Chatbot.png)
 
 ## Explore Fields
 
