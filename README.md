@@ -408,15 +408,26 @@ Here is the whole process flow diagram for each model being used.
 2) Tailwind CSS - (Style)
 3) Django - Web Application (Backend)
 4) Javascript - Validation & Client-Side Scripting
-5) MongoDB - DBMS
+5) MongoDB & Sqlite3 - DBMS
 6) Matplotlib & Seaborn - Data Visualization
 7) Google Charts, Charts.js and/or any other 3rd Party - Data Visualizer
 8) TensorFlow & scikit-learn (scipy) - DL and ML Model 
 9) OpenCV - Computer Vision
    
 ## Step-by-Step Code Execution Instructions:
-// will be done after whole prototype being pushed
-  This Section must contain set of instructions required to clone and run the prototype, so that it can be tested and deeply analysed
+
+As we have developed our LearnersEd Application, Web based, we used Django as our backend. so inorder to clone this project, the user first needs to fulfill all the prerequisite and dependencies/libraries needed by all our models, or just the requirements you needed for selected modules only. Yes, this is possible because we created each model independent of itself so that these modules can be easily used in other projects easily. 
+
+If you need to use a particular module lets say AIML Module or Web Module. If its AIML Module just copy the module files where you want to run the model and give input data for prediction, it will work fine. If you want to use web modules then you need to create django environment and add that app to the environment and make migrations if needed.
+
+Note: Some django modules have path assigned according to system directories, so you need to reassign the paths to all the models and dataset by searching through the `views.py` file present in each app or web module. If the `models.py` file contains data, you need to run the following commands before running server. The dataset `samples.pkl` used in Gamify-Quiz needs to be downloaded separately as the file size exceeds the github limit. We have provided the link for the `samples.pkl` dataset download in  `AIML Models> Gamification > readme.md`.
+
+``python manage.py makemigrations
+python manage.py migrate``
+
+#### Now lets discuss the step by step process for cloning the entire application in your environment!
+
+
   
 ## What I Learned:
 This advanced learning platform has motivated us to excel in every aspect of this project and upskill our knowledge parameters in various areas. Some of them are:-
