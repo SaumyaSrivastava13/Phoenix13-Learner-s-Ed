@@ -45,7 +45,7 @@ Making learning more interactive and innovative by providing a clearer picture a
 
 05.  A highlight section that would keep them connected to the world. Giving them a daily insight into what's happening around the globe, especially their areas of interest.
 
-## Category - 02  (Gamification)He is not.
+## Category - 02  (Gamification)
 
 ![Banner-4](https://cdn.discordapp.com/attachments/1046493587916988417/1113105577070047252/4.png)
 
