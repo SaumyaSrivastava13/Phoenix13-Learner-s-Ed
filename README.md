@@ -109,7 +109,70 @@ Now we have the lecture section where all of the lectures recommended for the st
 
 ![lec-2](https://cdn.discordapp.com/attachments/1046493587916988417/1115989285443735703/Screenshot_2023-06-07_183128.png)
 
-//
+# Drowsiness Detection System
+ 
+You can acces the drowsiness detection model used behind this, present in the AIML Modules Folder.
+
+The provided code in the AIML modules folder implements a drowsiness detection model using Convolutional Neural Networks (CNNs). Here is a summary of the code functionality:
+
+Importing necessary libraries: The code starts by importing the required libraries, including PIL, OpenCV, face_recognition, TensorFlow, and Keras.
+
+Eye Cropping Function: The eye_cropper function takes an image path as input and uses OpenCV and face_recognition to locate the eyes in the image. It crops the eye region, resizes it to 80x80 pixels, and returns the cropped image for further processing.
+
+Loading Images from Dataset: The load_images_from_folder function loads images from the specified folder and resizes them to 80x80 pixels. It assigns a label (0 for open eyes, 1 for closed eyes) and creates a list of image-label pairs.
+
+Preparing the Dataset: The code creates arrays for input images (X) and corresponding labels (y). It iterates through the image-label pairs, appends the images to X, and labels to y. The images are reshaped, normalized, and the labels are converted to arrays.
+
+Splitting the Dataset: The dataset is split into training and testing sets using the train_test_split function from sklearn. The splitting is stratified based on the labels to maintain class balance in both sets.
+
+Model Definition: The code defines the CNN model using the Sequential API of Keras. It includes convolutional layers, max-pooling layers, dense layers, and dropout layers for regularization.
+
+Model Compilation and Training: The model is compiled with binary cross-entropy loss and Adam optimizer. It is then trained on the training data, using the fit function, for 24 epochs. The validation data is used to monitor the model's performance during training.
+
+Model Evaluation: The trained model is evaluated on the testing data using the evaluate function. The evaluation results, including loss and metrics, are printed.
+
+Model Saving: The trained model is saved to a file using the save function.
+
+Prediction Function: The model_response function takes an image and uses the eye_cropper function to extract the eye region. The preprocessed image is then passed to the trained model for prediction. If the predicted probability of closed eyes exceeds a threshold, the function returns 'Yes,' indicating drowsiness.
+
+Model Usage: The model_response function is called with an image to demonstrate the usage of the trained model.
+
+In summary, the code prepares and trains a CNN model to classify eye states as open or closed for drowsiness detection. It provides a function to extract eye regions from images and a function to classify the eye state using the trained model.
+
+# Intel Optimization Applied
+
+Along with the normal model we have applied Intel oneDNN with OpenMP and scikit-learn-intelex, the scikit learn optimization by intel, which further leverages our model preformance. Using these optimization tools helped us getting more inferences in less time and train our model very fast as well
+
+Note: We have trained our model using intel oneAPI AI analytics toolkit oneDNN and OpenMP on intel i5 11th gen 11260H 6 core 12 thread computer.
+
+Here are the OpenMP params used
+
+inter: 6
+
+intra: 6
+
+KMP_BLOCKTIME: 1
+
+Test_Set: 25
+
+Rates
+
+Inference Time Rate: 1.1440191387559806
+
+Latency Rate: 0.8741112505227936
+
+Throughput Rate: 1.1440191387559806
+
+Training Time Rate: 0.438332327047551
+
+Here is the benchamarking difference between the model trained on normal cpu vs on intel optimization, same hardware better performance!
+
+![banch](https://cdn.discordapp.com/attachments/1046493587916988417/1115992633936986182/drowsy.png)
+
+
+# Gamify Section
+
+
 
 ![Process](https://cdn.discordapp.com/attachments/1046493587916988417/1115980341925130251/Intel_oneAPI_Hackathon_PPT.png)
   
