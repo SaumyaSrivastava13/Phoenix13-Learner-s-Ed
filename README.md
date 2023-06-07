@@ -257,9 +257,51 @@ Here is the benchmarks difference in normal cpu vs intel optimized cpu
 Here comes the virtual pet section, the students have access to their very own virtual pet, they can select from two types and set their name. At initial the students have pet rank as last and level at 1. They need to increase their pet level faster inorder to be at the top of the rank list, and how to increase level?
 They need to feed their pet with the help of inbuilt food shop, where food can be purchased in exchange of Learners'Ed Coins, these coins can only be gained from answering the quiz questions correct, hence, letting the student to boost their decision making and knowledge, by being encouraged by this fun virtual pet competition.
 
+This whole system is developed using javasccript code only, no model trained.
+
 ![vpet](https://cdn.discordapp.com/attachments/1046493587916988417/1116036254757310534/Screenshot_2023-06-07_213827.png)
 
 ![vpet](https://cdn.discordapp.com/attachments/1046493587916988417/1116036254371426355/Screenshot_2023-06-07_213909.png)
+
+# Assignment Upload Section
+
+Here in this section the students can upload their respective assignments, if however their assignment is matched to other students assignment it would reject the assignment and would not store it, if not then this assignment will be selected an the assignment will be added to the checker list. As the current situation tells us the requirement of plagiarism checker this needs to be the base restriction for our assignment uploading by each student.
+
+#### Accepted
+
+Submitting a unique assignment
+
+![check](https://cdn.discordapp.com/attachments/1046493587916988417/1116039939461763172/Screenshot_2023-06-07_215334.png)
+
+#### Rejected
+
+Submitting a same assignment again
+
+![check](https://cdn.discordapp.com/attachments/1046493587916988417/1116039939096842260/Screenshot_2023-06-07_215357.png)
+
+This model is not trained, it just use cosine_similarity and nltk library to calculate plagiarism, so no benchmark is done.
+
+Note: It only accepts doc or docx files for now, we will further extend it to other file types and can integrate a model with it as well.
+
+The provided code performs a plagiarism check on a student's assignment by comparing it with reference assignment files. Here is a technical write-up summarizing its functionality:
+
+Text Preprocessing: The code defines a function preprocess_text that takes a text input and performs preprocessing steps. It removes punctuation, converts the text to lowercase, and removes stopwords using the NLTK library.
+
+Text Extraction from DOCX: The code defines a function extract_text_from_docx that takes a file path to a DOCX document and extracts the text from its paragraphs using the python-docx library.
+
+Plagiarism Check: The code defines a function check_plagiarism that performs the plagiarism check. It takes the file path of the student's assignment DOCX file and a list of reference assignment files.
+
+Student Assignment Processing: The student's assignment is loaded and its text is extracted using the extract_text_from_docx function. The extracted text is then preprocessed using the preprocess_text function.
+
+Similarity Calculation: For each reference assignment file, the code loads the file, extracts its text, preprocesses it, and then calculates the similarity between the preprocessed student assignment and the preprocessed reference assignment. The similarity is measured using the cosine similarity of TF-IDF vectors.
+
+Output: The code returns a list of similarities, where each similarity value represents the similarity between the student's assignment and a reference assignment.
+
+Plagiarism Check Execution: The code sets the file path of the student's assignment and gets a list of reference assignment files in a specified directory. It then calls the check_plagiarism function with these inputs and retrieves the similarities.
+
+Similarity Display: The code iterates over the similarities and prints the similarity value for each reference assignment.
+
+In summary, the code performs a plagiarism check by comparing a student's assignment with a set of reference assignments. It preprocesses the text, extracts the relevant information from DOCX files, calculates the similarity using TF-IDF vectors, and provides a similarity score for each reference assignment. This approach allows for the detection of potential plagiarism by analyzing the textual content of the assignments.
 
 
 
