@@ -155,7 +155,7 @@ KMP_BLOCKTIME: 1
 
 Test_Set: 25
 
-Rates
+#### Benchmarks Rates
 
 Inference Time Rate: 1.1440191387559806
 
@@ -172,7 +172,85 @@ Here is the benchamarking difference between the model trained on normal cpu vs 
 
 # Gamify Section
 
+Now coming to the most entertaining section of the LearnersEd Portal, the gamify section. Here the students are encouraged to sharpen their minds along with having a fun competitve environment amongst them. There are two section here gamify quiz and virtual pet.
 
+![gam](https://cdn.discordapp.com/attachments/1046493587916988417/1116014066574569564/Screenshot_2023-06-07_185607.png)
+
+## Gamify Quiz 
+
+Here the students are presented with a quiz, but the twist is the answers are not selected by mouse or keyboard input, the options are selected by their head posture and this would reduce their decision taking time and would improve their reflexes to act upon situations, every student needs to attentively solve the quiz and then after the quiz they would get Learners'Ed Coins according to the marks they scored.
+
+![q](https://cdn.discordapp.com/attachments/1046493587916988417/1116014066285170708/Screenshot_2023-06-07_185628.png)
+
+![q2](https://cdn.discordapp.com/attachments/1046493587916988417/1116015387583205478/Screenshot_2023-06-07_201413.png)
+
+![q3](https://cdn.discordapp.com/attachments/1046493587916988417/1116015386983407636/Screenshot_2023-06-07_201617.png)
+
+This module is supported by Face Pose detection model developed by us.
+
+The provided code performs head pose estimation using a machine learning model. Here is a technical write-up summarizing its functionality:
+
+Data Loading: The code loads the input data from a pickle file. It consists of images as input samples (x) and corresponding head pose angles (y).
+
+Data Preprocessing: The head pose angles (y) are split into three components: roll, pitch, and yaw. The code then prints the minimum, maximum, mean, and standard deviation values for each component to provide insights into the data distribution.
+
+Dataset Splitting: The input data (x and y) is split into training, validation, and testing sets using the train_test_split function from scikit-learn. The training set contains 70% of the data, and the remaining 30% is evenly divided between the validation and testing sets.
+
+Data Standardization: The StandardScaler is applied to standardize the input features (x_train, x_val, and x_test) by subtracting the mean and scaling to unit variance.
+
+Model Architecture: The code defines a neural network model using the Sequential API from Keras. The model consists of three dense layers with ReLU activation. The first two layers have regularization using L2 kernel regularization.
+
+Model Compilation and Training: The model is compiled with the Adam optimizer and mean squared error (MSE) loss function. It is trained on the training data with early stopping based on the validation loss. The training progress is stored in the hist variable.
+
+Model Saving: The trained model is saved to a file named "model.h5".
+
+Model Evaluation: The code evaluates the trained model on the training, validation, and testing sets, printing the loss values for each set.
+
+Visualization: The training and validation loss curves are plotted to visualize the model's training progress.
+
+Face Point Detection: The code defines a function detect_face_points that uses the dlib library to detect the 68 facial landmarks on an input image.
+
+Feature Computation: The compute_features function calculates pairwise Euclidean distances between the detected facial landmarks, resulting in a feature vector.
+
+Feature Standardization: The computed features are standardized using the same StandardScaler instance used for the input features.
+
+Model Loading: The saved model is loaded from the "model.h5" file.
+
+Head Pose Estimation: The standardized features are fed into the loaded model to predict the roll, pitch, and yaw angles of the head pose.
+
+Result Visualization: The input image is displayed with the detected facial landmarks and the predicted head pose angles.
+
+In summary, the code performs head pose estimation by training a neural network on a dataset of images and corresponding head pose angles. It preprocesses the data, builds and trains the model, and then uses the trained model to predict head pose angles for new input images. The detected facial landmarks and predicted head pose angles are visualized for analysis and interpretation.
+
+# Intel Optimization Applied
+
+Here we applied oneDNN along with OpenMP and scikit-learn extension which leverages performance for us.
+
+Here are the OpenMP params
+
+inter: 2
+
+intra: 6
+
+KMP_BLOCKTIME: 0
+
+Test_Set: 25
+
+#### Benchmark Rate
+
+Inference Time Rate: 1.0136551020270463
+
+Latency Rate: 0.9865288479289062
+
+Throughput Rate: 1.0136551020270463
+
+Training Time Rate: 0.4256577027908266
+
+Here is the benchmarks difference in normal cpu vs intel optimized cpu
+
+![bgam](https://cdn.discordapp.com/attachments/1046493587916988417/1116017222951903284/FacePose.png)
+
+//
 
 ![Process](https://cdn.discordapp.com/attachments/1046493587916988417/1115980341925130251/Intel_oneAPI_Hackathon_PPT.png)
   
