@@ -381,6 +381,34 @@ Here is the whole process flow diagram for each model being used.
 # Process Flow Diagram
 
 ![Process](https://cdn.discordapp.com/attachments/1046493587916988417/1115980341925130251/Intel_oneAPI_Hackathon_PPT.png)
+
+# Summary of Intel oneAPI AI Analytics Toolkit Optimization
+To meet the project requirements, we have developed three sophisticated Deep Learning Models that play crucial roles in different sections of our platform. These models have been enhanced with Intel oneDNN and OpenMP optimization, allowing us to achieve exceptional performance gains, including faster training, higher throughput, improved inference speed, and reduced latency.
+
+The first model we have developed is the Drowsiness Detection Model, which is utilized in the Lecture Section. By leveraging Intel oneDNN and OpenMP optimization, we have significantly accelerated the training process of this model. This optimization framework has not only expedited the training phase but has also improved the overall inference speed during real-time drowsiness detection. As a result, students' attendance can be accurately determined based on their active listening time during lectures.
+
+The second model we have incorporated is the Face Pose Estimation Model, which plays a crucial role in the Gamify Quiz section. Through the implementation of Intel oneDNN and OpenMP optimization techniques, we have achieved remarkable improvements in training efficiency, throughput, and inference speed. These optimizations have enabled us to accurately estimate facial movements and gestures during the quiz, providing an engaging and interactive learning experience for students.
+
+Lastly, we have developed a sophisticated Mental Health Chatbot that leverages Intel oneDNN and OpenMP optimization. This optimization framework has significantly enhanced the performance of our chatbot, resulting in faster response times, improved throughput, and reduced latency. By employing Intel's optimization tools, such as scikit-learn-intelex, we have been able to train the chatbot model efficiently and deliver prompt and insightful responses to students seeking support.
+
+The integration of Intel oneDNN and OpenMP optimization in our models has been instrumental in achieving remarkable performance enhancements. The collaboration between our deep learning models and Intel's optimization tools has resulted in faster training processes, higher inference speeds, and improved overall efficiency. These optimizations have enabled us to deliver a seamless and efficient educational experience to our users while ensuring the highest quality standards.
+
+Intel oneDNN (Deep Neural Network Library) is a highly optimized library that provides efficient implementations of deep learning primitives. 
+By utilizing Intel oneDNN, our three models benefit from accelerated training, improved throughput, enhanced inference speed, and reduced latency. The library's optimized computations and parallelization techniques optimize the performance of our models, enabling faster and more efficient processing.
+
+OpenMP is an industry-standard API that allows for parallelization of code across multiple processors. With OpenMP, we can leverage multi-threading capabilities to distribute computations among multiple cores or processors, maximizing performance and speeding up training and inference processes for our models. 
+
+This parallelization significantly improves the overall efficiency and scalability of our models.
+
+Modin for Pandas is a powerful library that enhances the performance of Pandas, a popular data manipulation and analysis tool. By integrating Modin, we can scale Pandas operations across multiple processors or nodes, enabling faster data preprocessing and manipulation. This acceleration in data handling benefits our models by reducing the time required for data preparation, leading to quicker model training and improved overall efficiency.
+scikit-learn (sklearnex) is a widely used machine learning library that provides various algorithms and tools for tasks such as classification, regression, and model evaluation. 
+
+The test_train_split function from scikit-learn (sklearnex) is particularly helpful in our models. It enables us to split our dataset into training and testing subsets, facilitating proper model evaluation and validation. This function ensures that our models are trained on a representative subset of data and are subsequently tested on an independent portion, helping us gauge their performance accurately.
+In addition, the patch functionality of scikit-learn (sklearnex) allows us to apply specific fixes or modifications to the library, enhancing its compatibility with our models and ensuring seamless integration. 
+
+These combined capabilities of scikit-learn (sklearnex) and the test_train_split function enable us to effectively train and evaluate our models, leading to more accurate predictions and reliable performance.
+
+Faster inference speed is crucial in deployment, as it ensures real-time responsiveness and enables scalability in high-concurrency scenarios. It also contributes to cost efficiency by optimizing resource utilization. The Intel i5 11th gen processor plays a pivotal role in driving the efficiency and speed of our models in our web-based education platform.
   
 ## Tech Stack: 
 
