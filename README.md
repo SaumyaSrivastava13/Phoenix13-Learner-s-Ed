@@ -410,6 +410,12 @@ These combined capabilities of scikit-learn (sklearnex) and the test_train_split
 
 Faster inference speed is crucial in deployment, as it ensures real-time responsiveness and enables scalability in high-concurrency scenarios. It also contributes to cost efficiency by optimizing resource utilization. The Intel i5 11th gen processor plays a pivotal role in driving the efficiency and speed of our models in our web-based education platform.
   
+## Link to Project Video
+[https://youtu.be/N8nnZsvOhVo](https://youtu.be/N8nnZsvOhVo)
+  
+## Link to Benchmarking Video for Intel Optimization
+[https://youtu.be/2GJiBfsu9LE](https://youtu.be/2GJiBfsu9LE)
+  
 ## Tech Stack: 
 
 #### List of oneAPI AI Analytics Toolkits & its libraries used
