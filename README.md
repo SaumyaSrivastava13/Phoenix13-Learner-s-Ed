@@ -415,6 +415,9 @@ Faster inference speed is crucial in deployment, as it ensures real-time respons
   
 ## Link to Benchmarking Video for Intel Optimization
 [https://youtu.be/2GJiBfsu9LE](https://youtu.be/2GJiBfsu9LE)
+
+## Link to Medium Blog
+[https://medium.com/@kulshrestha.sujal13/open-innovation-in-education-dcd67bebdad7](https://medium.com/@kulshrestha.sujal13/open-innovation-in-education-dcd67bebdad7)
   
 ## Tech Stack: 
 
